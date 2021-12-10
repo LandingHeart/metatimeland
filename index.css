@@ -1,3 +1,6 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
 body {
   background: url("background.png") no-repeat;
   font-family: "Roboto", sans-serif;
@@ -39,15 +42,31 @@ nav {
   color: white;
   line-height: 50px;
 }
+.banner-message h1 {
+  font-size: 70px;
+}
 .banner-message-button {
   border: none;
+  font-weight: bold;
   color: white;
   overflow: hidden;
   padding: 0;
   text-transform: uppercase;
-  width: 160px;
+  width: 280px;
   height: 50px;
   background-color: #e94043;
   border-radius: 3px;
   font-size: 15px;
+  transition: 100ms ease-in;
+  -webkit-font-smoothing: antialiased;
+}
+
+.banner-message-button::before {
+  background: #e73f42;
+}
+
+.banner-message-button:hover {
+  background-color: #fc4f52;
+  transform: translateY(-1px);
+  cursor: pointer;
 }
